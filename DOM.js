@@ -1,15 +1,18 @@
+let foto = document.querySelector('#fotoCronos')
+let texto = document.querySelector('#nombreColor')
 
-let botonRojo = document.querySelector('#negro'); 
-botonRojo.onclic = function cambiar(){
-img.src = 'imagenes/cronosRojo'
-let botonBlanco = document.querySelector('.imagenes')
-botonBlanco = 'imagenes/cronosRojo'
+let botonNegro = document.querySelector('#Negro');
+botonNegro.onmouseover = function(){
+    foto.src = 'imagenes/cronosNegro.png'
+    texto.textContent = 'Negro vulcano'
 }
-
-letbotonBlanco = document.querySelector('#negro')
-botonBlanco.onclick = function cambiar(){
-
-    let botonBlanco = document.querySelector(imagenes)
-    botonBlanco = 'imagenes/cronosBlanco'
-    img.src = 'imagenes/cronpsBlanco'
+let botonRojo = document.querySelector('#Rojo');
+botonRojo.onmouseover = function(){
+    foto.src = 'imagenes/cronosRojo.png'
+    texto.textContent = 'Rojo fuego'
+}
+let botonBlanco = document.querySelector('#Blanco');
+botonBlanco.onmouseover = function(){
+    foto.src = 'imagenes/cronosBlanco.png'
+    texto.textContent = 'Blanco Alaska'
 }
